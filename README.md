@@ -5,12 +5,12 @@ MATLAB code accompanying:
 > **Strong binding myosin cross-bridges dynamically modulate thin filament near-neighbor cooperative interactions in murine myocardium.**
 > Tuan A. Phan and Daniel P. Fitzsimons.
 
-The code implements the ordinary-differential-equation (ODE) thin-filament model used in the paper and reproduces the model figures. The model extends our previous four-state model (Phan & Fitzsimons, 2025) with NEM-S1 treatment (two additional NEM-S1-bound regulatory-unit states) and near-neighbor RU–RU, XB–RU, and XB–XB cooperative interactions.
+The code implements the ordinary-differential-equation (ODE) thin-filament model used in the paper and reproduces the model figures. The model extends our previous four-state model ([Phan & Fitzsimons, 2025](https://rupress.org/jgp/article/155/11/e202213315/276275/Cooperative-mechanisms-underlie-differences-in)) with NEM-S1 treatment (two additional NEM-S1-bound regulatory-unit states) and near-neighbor RU–RU, XB–RU, and XB–XB cooperative interactions.
 
 ## Requirements
 
 - MATLAB (R2021b or later recommended)
-- Optimization Toolbox and Global Optimization Toolbox (only for re-running the parameter fits; `patternsearch` with a Latin-Hypercube search is used)
+- Optimization Toolbox and Global Optimization Toolbox (`patternsearch` with a Latin-Hypercube search is used)
 - ODE solvers `ode15s` / `ode23` are part of base MATLAB (no toolbox needed to reproduce the figures)
 
 ## Repository layout
@@ -36,7 +36,7 @@ Each folder contains the same core files:
 
 ## Model parameters
 
-The 21-element parameter vector `p` used by `filament_function_NEM_S1.m` is:
+The 21-parameter vector `p` used by `filament_function_NEM_S1.m` is:
 
 ```
 p = [k_BC^0, k_BC^Ca, k_CB^0, k_CB^Ca, f_CM1^0, f_M1C^0, k_M1M2, k_M2M1, k_M2C,
@@ -62,11 +62,3 @@ State variables: `C` (closed), `M1` (strongly bound, non-force-generating), `M1_
 ## Data
 
 The underlying mechanical data (steady-state force, *k*tr, and relative *k*tr vs. pCa for control and NEM-S1 murine left ventricle) are given in Supplemental Tables S1 and S2 of the manuscript and are embedded in the `main_fit_NEM_*.m` scripts and the `.mat` files.
-
-## Citation
-
-If you use this code, please cite the manuscript above (and Phan & Fitzsimons, *J. Gen. Physiol.* 2025, for the base model).
-
-## License
-
-<!-- Add a license of your choice, e.g. MIT. Create a LICENSE file in the repo root. -->
