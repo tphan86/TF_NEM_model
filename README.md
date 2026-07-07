@@ -1,11 +1,11 @@
-# Thin-Filament Model with NEM-S1 (TF_model)
+# Thin-Filament Model with NEM-S1
 
 MATLAB code accompanying:
 
 > **Strong binding myosin cross-bridges dynamically modulate thin filament near-neighbor cooperative interactions in murine myocardium.**
 > Tuan A. Phan and Daniel P. Fitzsimons.
 
-The code implements the ordinary-differential-equation (ODE) thin-filament model used in the paper and reproduces the model figures. The model extends our previous four-state model ([Phan & Fitzsimons, 2025](https://rupress.org/jgp/article/155/11/e202213315/276275/Cooperative-mechanisms-underlie-differences-in)) with NEM-S1 treatment (two additional NEM-S1-bound regulatory-unit states) and near-neighbor RU–RU, XB–RU, and XB–XB cooperative interactions.
+The code implements the ordinary-differential-equation (ODE) thin-filament model used in the paper and reproduces the model figures. The model extends our previous four-state model ([Phan & Fitzsimons, 2025](https://rupress.org/jgp/article/157/2/e202413582/277237/Modeling-the-effects-of-thin-filament-near?searchresult=1)) with NEM-S1 treatment (two additional NEM-S1-bound regulatory-unit states) and near-neighbor RU–RU, XB–RU, and XB–XB cooperative interactions.
 
 ## Requirements
 
